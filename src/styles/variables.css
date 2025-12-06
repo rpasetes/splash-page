@@ -1,0 +1,21 @@
+:root {
+  /* Tasi spectrum - the reef gradient */
+  --tasi-shallow: #7fdbda;
+  --tasi-mid: #48c9b0;
+  --tasi-deep: #1e8f89;
+  --tasi-abyss: #0d5c55;
+
+  /* Sand spectrum */
+  --sand-dry: #f5f0e6;
+  --sand-wet: #e8dfd0;
+  --sand-submerged: #d4c9b8;
+
+  /* Accent - light on wave crests */
+  --foam-white: #ffffff;
+  --light-scatter: rgba(255, 255, 255, 0.6);
+
+  /* Text */
+  --text-primary: #1a3a3a;
+  --text-secondary: #2d5454;
+  --text-on-deep: #e8f4f4;
+}
