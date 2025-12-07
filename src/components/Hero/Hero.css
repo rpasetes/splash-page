@@ -6,13 +6,13 @@
   position: relative;
   overflow: hidden;
 
-  /* Subtle shoreline gradient background */
+  /* Subtle shoreline gradient background - shallow water at top */
   background: linear-gradient(
     180deg,
-    var(--tasi-shallow) 0%,
-    var(--tasi-mid) 40%,
-    var(--sand-wet) 70%,
-    var(--sand-dry) 100%
+    var(--sand-dry) 0%,
+    var(--sand-wet) 30%,
+    var(--tasi-shallow) 60%,
+    var(--tasi-mid) 100%
   );
 }
 

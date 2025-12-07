@@ -3,12 +3,11 @@
   padding: 6rem 2rem;
   position: relative;
 
-  /* Deeper water aesthetic - darker tasi tones */
+  /* Deeper water aesthetic - continues gradient from hero */
   background: linear-gradient(
     180deg,
-    var(--sand-dry) 0%,
-    var(--tasi-mid) 20%,
-    var(--tasi-deep) 60%,
+    var(--tasi-mid) 0%,
+    var(--tasi-deep) 40%,
     var(--tasi-abyss) 100%
   );
 }
