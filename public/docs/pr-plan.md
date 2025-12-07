@@ -283,16 +283,32 @@ this plan assumes a vite + react + ts stack and treats webgl, fish, and audio as
 
 ---
 
-### pr 12 — portfolio real content
-**branch:** `feat/portfolio-content`  
-**labels:** `content`, `ui`
+### pr 12 — portfolio design + real content
+**branch:** `feat/portfolio-content`
+**labels:** `content`, `ui`, `design`
 
-- [ ] define project data model
-- [ ] implement cards + lazy images
-- [ ] basic filter/sort if useful
+**design implementation:**
+- [ ] restore portfolio section in App.tsx
+- [ ] design portfolio card layout (visual treatment, spacing, grid)
+- [ ] implement "deeper water" visual transition from hero
+- [ ] add scroll-triggered reveals / animations
+- [ ] ensure responsive grid (desktop → tablet → mobile)
+- [ ] lazy-load project images
+- [ ] add hover states / interactions
+
+**content addition:**
+- [ ] define project data model (title, description, tech stack, links, image)
+- [ ] add real project data (replace placeholders)
+- [ ] add project images to public/images/projects/
+- [ ] wire project links (github, live demo, etc.)
+- [ ] add optional filter/sort if useful
 
 **acceptance**
 - [ ] content stands alone without effects
+- [ ] portfolio feels like "diving deeper" from hero
+- [ ] cards are visually cohesive with tasi theme
+- [ ] responsive across all breakpoints
+- [ ] images lazy-load efficiently
 
 ---
 

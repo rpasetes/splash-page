@@ -1,4 +1,5 @@
 import './Hero.css'
+import Story from './Story'
 
 export default function Hero() {
   return (
@@ -11,9 +12,7 @@ export default function Hero() {
         <div className="hero-content">
           <h1 className="hero-title">hi, i'm russell 🤙</h1>
 
-          <p className="hero-blurb">
-            Placeholder blurb text. The real content with hidden links will come in PR 5.
-          </p>
+          <Story />
 
           <div className="hero-links">
             <a href="/resume/russell-pasetes-resume.pdf" className="hero-link">

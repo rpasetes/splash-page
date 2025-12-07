@@ -67,7 +67,7 @@ The "hang loose" emoji (🤙) in the heading is perfect—it's a Guam/Pacific th
 ### Primary Hero Content
 The hero must include foundational identity + navigation:
 - Name + title line
-- Core blurb paragraph
+- Core story paragraph
 - Hero photo
 - **Primary social CTAs**
   - Resume (hosted PDF on this site)
@@ -85,7 +85,7 @@ These links are part of the core content layer and must ship early, before any W
 │   ┌──────────────┐                                      │
 │   │              │     hi, i'm russell 🤙               │
 │   │    PHOTO     │                                      │
-│   │              │     [paragraph blurb with hidden     │
+│   │              │     [paragraph story with hidden     │
 │   │              │      hyperlinks that reveal on       │
 │   └──────────────┘      hover—words glow/shimmer        │
 │                         like light catching on water]   │
@@ -97,7 +97,7 @@ These links are part of the core content layer and must ship early, before any W
 
 **Photo treatment**: The image should feel integrated into the water—perhaps a subtle mask that feathers at the edges, or a shape that isn't a perfect rectangle. Consider whether the image itself should have a slight animated shimmer, as if seen through moving water.
 
-**Blurb hidden links**: Certain words in the paragraph are secretly hyperlinks. On hover, they reveal themselves—perhaps the text gains a subtle glow, or an underline ripples in like a wave, or the word briefly shimmers. This rewards exploration. Don't make it obvious which words are links until hover.
+**Story hidden links**: Certain words in the paragraph are secretly hyperlinks. On hover, they reveal themselves—perhaps the text gains a subtle glow, or an underline ripples in like a wave, or the word briefly shimmers. This rewards exploration. Don't make it obvious which words are links until hover.
 
 **Social links**: Styled as minimal icons or text, perhaps with a subtle "bob" animation like they're floating on water. On hover, a small ripple emanates from them.
 
@@ -197,7 +197,7 @@ splash-page/
 │   │   ├── Hero/
 │   │   │   ├── Hero.tsx
 │   │   │   ├── Photo.tsx
-│   │   │   ├── Blurb.tsx          # handles hidden link reveals
+│   │   │   ├── Story.tsx          # handles hidden link reveals
 │   │   │   └── SocialLinks.tsx
 │   │   ├── Portfolio/
 │   │   │   ├── Portfolio.tsx
@@ -298,7 +298,7 @@ No "optimize until it works" approach on phones.
 
 ### Accessibility
 - All interactive elements must be keyboard accessible
-- Hidden links in blurb should be discoverable (aria-label, or the links should be visible on focus too, not just hover)
+- Hidden links in story should be discoverable (aria-label, or the links should be visible on focus too, not just hover)
 - Motion preferences respected: `prefers-reduced-motion` disables water effects, fish, etc.
 - Audio is opt-in only
 - Sufficient color contrast on all text
@@ -336,7 +336,7 @@ No "optimize until it works" approach on phones.
 ### Phase 2: Real Content + Core Layout
 - Static layout (hero + placeholder portfolio)
 - Integrate actual hero photo asset (`russell.jpeg`)
-- Implement the real blurb with hidden links mapped
+- Implement the real story with hidden links mapped
 - Add social links (resume/github/linkedin/x)
 - Ensure keyboard + focus-visible behaviors for hidden links
 
@@ -386,7 +386,7 @@ No "optimize until it works" approach on phones.
 
 2. **Portfolio content**: What projects will populate the portfolio section initially? This affects card design.
 
-3. **Hidden link destinations**: What words in your blurb will secretly link out, and to where? This is a fun opportunity to embed meaning.
+3. **Hidden link destinations**: What words in your story will secretly link out, and to where? This is a fun opportunity to embed meaning.
 
 4. **Fish species**: Any specific Chamorro reef fish you'd want represented? Palakse' (parrotfish)? Sesyon (surgeonfish)? Could be a nice detail.
 
@@ -410,11 +410,11 @@ The goal: someone visits your site and for a moment, feels like they're standing
 
 ---
 
-## The Blurb (With Hidden Links Mapped)
+## The Story (With Hidden Links Mapped)
 
 The paragraph below contains secret hyperlinks. Words/phrases in **bold** are the hidden links—they appear as normal text until hovered, when they reveal themselves with a subtle shimmer/glow effect.
 
-> I've been building for a while — **music tech startup at MIT**, **government apps** on the **beautiful island territory** of **Guam** by leveraging LLMs before most people trusted them. But I kept hitting the same wall: people couldn't see what was coming, and I didn't have the language to explain why. So I took a sabbatical to figure that out — studying how the **invention of language** **shapes cultural memory**. Came to the **Fractal Bootcamp** in Williamsburg to stop theorizing and start building. I'm looking to work with people who already hear what's coming, who are making tools that help people think more clearly, remember what matters, and understand where they came from — so we know where we're going.
+> I've been programming for a while — from a **music tech startup at MIT** to **government software** on the **beautiful island territory** of **Guam**, where I leveraged large language models before most people trusted them. But I kept hitting the same wall: the folks back home couldn't hear the wave that was coming, and I didn't have the words to explain why. So I traveled the world to figure that out — studying the **invention**, **inheritance**, and **integrity** of language itself. Eventually arrived at the **Fractal Bootcamp** in Williamsburg, NYC to stop theorizing and start building. I'm looking to work with people who are surfing what's already here by crafting tools that help people think more clearly and remember what matters.
 
 ### Link Mapping
 
@@ -424,8 +424,9 @@ The paragraph below contains secret hyperlinks. Words/phrases in **bold** are th
 | government apps | https://dmrpacific.com/ |
 | beautiful island territory | https://www.visitguam.com/about-guam/ |
 | Guam | https://www.guampedia.com/ |
-| invention of language | https://www.goodreads.com/book/show/164515.Orality_and_Literacy |
-| shapes cultural memory | https://www.lynnekelly.com.au/?page_id=1343 |
+| invention | https://www.goodreads.com/book/show/164515.Orality_and_Literacy |
+| inheritance | https://www.goodreads.com/book/show/48582.The_Spell_of_the_Sensuous |
+| integrity | https://www.goodreads.com/en/book/show/211076323-the-knowledge-gene |
 | Fractal Bootcamp | https://fractalbootcamp.com/ |
 
 ### Hidden Link Behavior

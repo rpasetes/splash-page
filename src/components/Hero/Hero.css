@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 2rem;
   position: relative;
   overflow: hidden;
@@ -29,22 +30,44 @@
 /* Photo treatment */
 .hero-photo {
   position: relative;
+  align-self: stretch;
 }
 
 .hero-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   border-radius: 8px;
+
   /* Subtle shadow like depth in water */
   box-shadow:
     0 10px 40px rgba(13, 92, 85, 0.15),
     0 4px 12px rgba(13, 92, 85, 0.1);
 
   /* Prevent layout shift */
-  aspect-ratio: 3 / 4;
+  min-height: 400px;
   object-fit: cover;
   background: var(--sand-wet);
+
+  /* Feathered edge - integrated into water effect */
+  mask-image: radial-gradient(
+    ellipse 100% 100% at 50% 50%,
+    black 60%,
+    transparent 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse 100% 100% at 50% 50%,
+    black 60%,
+    transparent 100%
+  );
+}
+
+/* Fallback for browsers without mask support */
+@supports not (mask-image: radial-gradient(black, transparent)) {
+  .hero-photo img {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
 }
 
 /* Content area */
@@ -61,8 +84,8 @@
   line-height: var(--leading-tight);
 }
 
-.hero-blurb {
-  font-size: var(--text-lg);
+.hero-story {
+  font-size: var(--text-base);
   line-height: var(--leading-relaxed);
   color: var(--text-secondary);
   margin: 0;
@@ -117,7 +140,7 @@
     align-items: center;
   }
 
-  .hero-blurb {
+  .hero-story {
     text-align: left;
   }
 
@@ -147,7 +170,7 @@
     font-size: var(--text-3xl);
   }
 
-  .hero-blurb {
+  .hero-story {
     font-size: var(--text-base);
   }
 
