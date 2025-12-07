@@ -1,5 +1,5 @@
 import './Hero.css'
-import Blurb from './Blurb'
+import Story from './Story'
 
 export default function Hero() {
   return (
@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="hero-content">
           <h1 className="hero-title">hi, i'm russell 🤙</h1>
 
-          <Blurb />
+          <Story />
 
           <div className="hero-links">
             <a href="/resume/russell-pasetes-resume.pdf" className="hero-link">

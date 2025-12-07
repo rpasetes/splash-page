@@ -84,7 +84,7 @@
   line-height: var(--leading-tight);
 }
 
-.hero-blurb {
+.hero-story {
   font-size: var(--text-base);
   line-height: var(--leading-relaxed);
   color: var(--text-secondary);
@@ -140,7 +140,7 @@
     align-items: center;
   }
 
-  .hero-blurb {
+  .hero-story {
     text-align: left;
   }
 
@@ -170,7 +170,7 @@
     font-size: var(--text-3xl);
   }
 
-  .hero-blurb {
+  .hero-story {
     font-size: var(--text-base);
   }
 

@@ -1,9 +1,9 @@
-import './Blurb.css'
+import './Story.css'
 
-export default function Blurb() {
+export default function Story() {
   return (
-    <p className="hero-blurb">
-      I've been building for a while —{' '}
+    <p className="hero-story">
+      I've been programming for a while — from a{' '}
       <a
         href="https://betterworld.mit.edu/meet-the-makers-russell-pasetes-20/"
         className="hidden-link"
@@ -11,15 +11,15 @@ export default function Blurb() {
         rel="noopener noreferrer"
       >
         music tech startup at MIT
-      </a>
-      ,{' '}
+      </a>{' '}
+      to{' '}
       <a
         href="https://dmrpacific.com/"
         className="hidden-link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        government apps
+        government software
       </a>{' '}
       on the{' '}
       <a
@@ -38,27 +38,37 @@ export default function Blurb() {
         rel="noopener noreferrer"
       >
         Guam
-      </a>{' '}
-      by leveraging LLMs before most people trusted them. But I kept hitting the same wall:
-      people couldn't see what was coming, and I didn't have the language to explain why. So I
-      took a sabbatical to figure that out — studying how the{' '}
+      </a>
+      , where I leveraged large language models before most people trusted them. But I kept
+      hitting the same wall: the folks back home couldn't hear the wave that was coming, and I
+      didn't have the words to explain why. So I traveled the world to figure that out — studying the{' '}
       <a
         href="https://www.goodreads.com/book/show/164515.Orality_and_Literacy"
         className="hidden-link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        invention of language
-      </a>{' '}
+        invention
+      </a>
+      ,{' '}
       <a
-        href="https://www.lynnekelly.com.au/?page_id=1343"
+        href="https://www.goodreads.com/book/show/48582.The_Spell_of_the_Sensuous"
         className="hidden-link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        shapes cultural memory
+        inheritance
       </a>
-      . Came to the{' '}
+      , and{' '}
+      <a
+        href="https://www.goodreads.com/en/book/show/211076323-the-knowledge-gene"
+        className="hidden-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        integrity
+      </a>{' '}
+      of language itself. Eventually arrived at the{' '}
       <a
         href="https://fractalbootcamp.com/"
         className="hidden-link"
@@ -67,9 +77,9 @@ export default function Blurb() {
       >
         Fractal Bootcamp
       </a>{' '}
-      in Williamsburg to stop theorizing and start building. I'm looking to work with people who
-      already hear what's coming, who are making tools that help people think more clearly,
-      remember what matters, and understand where they came from — so we know where we're going.
+      in Williamsburg, NYC to stop theorizing and start building. I'm looking to work with people
+      who are surfing what's already here by crafting tools that help people think more clearly and
+      remember what matters.
     </p>
   )
 }
