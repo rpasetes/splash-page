@@ -1,0 +1,34 @@
+/* Hidden links - completely hidden until hover/focus */
+.hidden-link {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* Reveal with glow on hover - like light catching on water */
+.hidden-link:hover,
+.hidden-link:focus-visible {
+  color: var(--tasi-deep);
+  text-shadow: 0 0 8px rgba(127, 219, 218, 0.4);
+}
+
+/* Keyboard focus state */
+.hidden-link:focus-visible {
+  outline: 2px solid var(--tasi-mid);
+  outline-offset: 2px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hidden-link {
+    transition: none;
+  }
+
+  .hidden-link:hover,
+  .hidden-link:focus-visible {
+    text-shadow: none;
+  }
+}
