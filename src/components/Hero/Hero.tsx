@@ -16,16 +16,31 @@ export default function Hero() {
           </p>
 
           <div className="hero-links">
-            <a href="#resume" className="hero-link">
+            <a href="/resume/russell-pasetes-resume.pdf" className="hero-link">
               resume
             </a>
-            <a href="#github" className="hero-link">
+            <a
+              href="https://github.com/rpasetes"
+              className="hero-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               github
             </a>
-            <a href="#linkedin" className="hero-link">
+            <a
+              href="https://www.linkedin.com/in/russell-pasetes-065a11160/"
+              className="hero-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               linkedin
             </a>
-            <a href="#twitter" className="hero-link">
+            <a
+              href="https://x.com/rslantonie"
+              className="hero-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               twitter
             </a>
           </div>
