@@ -72,9 +72,9 @@
 /* Social links */
 .hero-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .hero-link {
@@ -82,25 +82,22 @@
   font-size: var(--text-base);
   font-weight: var(--weight-medium);
   color: var(--text-primary);
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid var(--tasi-deep);
-  border-radius: 4px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: var(--tasi-deep);
   transition: all 0.2s ease;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(4px);
 }
 
 .hero-link:hover {
-  background: var(--tasi-mid);
-  color: var(--foam-white);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(30, 143, 137, 0.3);
+  color: var(--tasi-deep);
+  text-decoration-thickness: 2px;
 }
 
 .hero-link:focus-visible {
   outline: 2px solid var(--tasi-deep);
   outline-offset: 2px;
+  border-radius: 2px;
 }
 
 /* Tablet breakpoint */
@@ -155,14 +152,7 @@
   }
 
   .hero-links {
-    gap: 1rem;
-    width: 100%;
-  }
-
-  .hero-link {
-    flex: 1 1 auto;
-    min-width: 120px;
-    text-align: center;
+    gap: 1.5rem;
   }
 }
 
